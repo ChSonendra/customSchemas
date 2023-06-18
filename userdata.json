@@ -3,7 +3,7 @@
     "type": "object",
     "$metadata": {
       "uris": {
-        "jsonLdContext": "https://raw.githubusercontent.com/0xPolygonID/tutorial-examples/main/credential-schema/schemas-examples/employee-data/employee-data.jsonld",
+        "jsonLdContext": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userdata.jsonld#userData",
         "jsonSchema": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userdata.json"
       }
     },
