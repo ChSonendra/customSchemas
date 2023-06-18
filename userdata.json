@@ -115,7 +115,7 @@
             "format": "uri"
           },
           "email": {
-            "type": "integer"
+            "type": "string"
           }
         }
       }
