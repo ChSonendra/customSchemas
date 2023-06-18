@@ -5,7 +5,7 @@
       "@protected": true,
       "id": "@id",
       "type": "@type",
-      "userData": {
+      "email": {
         "@id": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userdata.jsonld#userData",
         "@context": {
           "@version": 1.1,
