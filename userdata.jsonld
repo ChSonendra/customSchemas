@@ -5,7 +5,7 @@
       "@protected": true,
       "id": "@id",
       "type": "@type",
-      "email": {
+      "userData": {
         "@id": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userdata.jsonld#userData",
         "@context": {
           "@version": 1.1,
@@ -14,7 +14,7 @@
           "type": "@type",
           "vocab": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userData.md#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
-          "monthlySalary": {
+          "email": {
             "@id": "vocab:monthlySalary",
             "@type": "xsd:integer"
           }
