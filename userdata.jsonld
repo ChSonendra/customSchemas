@@ -15,7 +15,7 @@
           "vocab": "https://raw.githubusercontent.com/ChSonendra/customSchemas/main/userData.md#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "email": {
-            "@id": "vocab:monthlySalary",
+            "@id": "vocab:email",
             "@type": "xsd:string"
           }
         }
