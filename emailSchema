@@ -2,7 +2,7 @@
         "$metadata": {
             "type": "emailtest",
             "uris": {
-                "jsonLdContext": [
+                "jsonLdContext": "[
                     {
                         "@protected": true,
                         "@version": 1.1,
@@ -22,7 +22,7 @@
                             "@id": "urn:uuid:14b3592e-46d8-42a1-b87f-22c50d638b84"
                         }
                     }
-                ]
+                ]"
             },
             "version": "1.0"
         },
