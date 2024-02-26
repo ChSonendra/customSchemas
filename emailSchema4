@@ -1,0 +1,144 @@
+{
+        "$metadata": {
+            "type": "emailtest",
+            "uris": {
+                "jsonLdContext": {
+                        "@protected": true,
+                        "@version": 1.1,
+                        "id": "@id",
+                        "type": "@type",
+                        "emailtest": {
+                            "@context": {
+                                "@propagate": true,
+                                "@protected": true,
+                                "polygon-vocab": "urn:uuid:970e90d1-d3fb-43bc-9312-7256b3830626#",
+                                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                                "email": {
+                                    "@id": "polygon-vocab:email",
+                                    "@type": "xsd:string"
+                                }
+                            },
+                            "@id": "urn:uuid:14b3592e-46d8-42a1-b87f-22c50d638b84"
+                        }
+                    }
+            },
+            "version": "1.0"
+        },
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "description": "this credential will be used to issue a email credential",
+        "title": "email certificate",
+        "properties": {
+            "@context": {
+                "type": [
+                    "string",
+                    "array",
+                    "object"
+                ]
+            },
+            "expirationDate": {
+                "format": "date-time",
+                "type": "string"
+            },
+            "id": {
+                "type": "string"
+            },
+            "issuanceDate": {
+                "format": "date-time",
+                "type": "string"
+            },
+            "issuer": {
+                "type": [
+                    "string",
+                    "object"
+                ],
+                "format": "uri",
+                "properties": {
+                    "id": {
+                        "format": "uri",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id"
+                ]
+            },
+            "type": {
+                "type": [
+                    "string",
+                    "array"
+                ],
+                "items": {
+                    "type": "string"
+                }
+            },
+            "credentialSubject": {
+                "description": "Stores the data of the credential",
+                "title": "Credential subject",
+                "properties": {
+                    "id": {
+                        "description": "Stores the DID of the subject that owns the credential",
+                        "title": "Credential subject ID",
+                        "format": "uri",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "email attribute",
+                        "title": "email attribute",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "email"
+                ],
+                "type": "object"
+            },
+            "credentialSchema": {
+                "properties": {
+                    "id": {
+                        "format": "uri",
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "type"
+                ],
+                "type": "object"
+            },
+            "credentialStatus": {
+                "description": "Allows the discovery of information about the current status of the credential, such as whether it is suspended or revoked.",
+                "title": "Credential Status",
+                "properties": {
+                    "id": {
+                        "description": "Id URL of the credentialStatus.",
+                        "title": "Id",
+                        "format": "uri",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Expresses the credential status type (method). The value should provide enough information to determine the current status of the credential.",
+                        "title": "Type",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "type"
+                ],
+                "type": "object"
+            }
+        },
+        "required": [
+            "@context",
+            "id",
+            "issuanceDate",
+            "issuer",
+            "type",
+            "credentialSubject",
+            "credentialSchema"
+        ],
+        "type": "object"
+    }
